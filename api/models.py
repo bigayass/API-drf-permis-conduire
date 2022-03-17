@@ -20,7 +20,7 @@ class Serie(models.Model):
 
 class Question(models.Model):
 
-    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    #id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     serie = models.ForeignKey(Serie, related_name='questions', on_delete=models.CASCADE)
     title = models.CharField(max_length=255, verbose_name=_("Title"))
     image = models.ImageField(upload_to='quiz_imgs/', verbose_name=_("Question Image"))
