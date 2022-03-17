@@ -5,7 +5,7 @@ import uuid
 
 class Serie(models.Model):
 
-    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    #id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     title = models.CharField(max_length=255, default=_("New Serie"))
     date_created = models.DateTimeField(auto_now_add=True, verbose_name=_("Date Created"))
     is_active = models.BooleanField(default=True, verbose_name=_("Active Status"))
