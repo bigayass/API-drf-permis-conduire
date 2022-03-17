@@ -8,7 +8,7 @@ urlpatterns = [
 	path('token/', obtain_auth_token, name='obtain_auth_token'),
 
 	path('get-all-series/', views.getAllSeries, name='get_all_series'),
-	path('get-all-serie-questions/<uuid:pk>/', views.getOneSerieQuestions, name='get_all_serie_questions'),
+	path('get-all-serie-questions/<str:pk>/', views.getOneSerieQuestions, name='get_all_serie_questions'),
 
 	# path('series-list/', views.SeriesList.as_view(), name='series_list'),
 	# path('series-detail/<uuid:pk>/', views.SerieDetail.as_view(), name='serie_detail'),
