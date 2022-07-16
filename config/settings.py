@@ -90,10 +90,21 @@ WSGI_APPLICATION = 'config.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql', # on utilise l'adaptateur postgresql
+        'NAME':'dardmpjcpdcre1', # le nom de notre base de donnees creee precedemment
+        'USER': 'ctsfjaxqxvkhnr', # attention : remplacez par votre nom d'utilisateur
+        'PASSWORD': 'd4954234d1b0921f2902a775490e8a9262b79a45a79989e2f5f97bab7e7e8135',
+        'HOST': 'ec2-54-144-237-73.compute-1.amazonaws.com',
+        'PORT': '5432',
     }
 }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
 
 db_from_env = dj_database_url.config(conn_max_age=600)
 DATABASES['default'].update(db_from_env)
