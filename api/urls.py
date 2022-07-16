@@ -14,7 +14,8 @@ urlpatterns = [
 	path('export-questions/', views.questionsExport, name='export_questions'),
 	path('export-answers/', views.answersExport, name='export_answers'),
 
-	path('get-automation-data2/', views.getAutomationData2, name='get_data1'),
+	path('get-automation-data2/', views.getAutomationData2, name='get_data2'),
+	path('get-automation-data3/', views.getAutomationData3, name='get_data3'),
 	# path('series-list/', views.SeriesList.as_view(), name='series_list'),
 	# path('series-detail/<uuid:pk>/', views.SerieDetail.as_view(), name='serie_detail'),
 	# path('questions-list/', views.QuestionsList.as_view(), name='questions_list'),

@@ -40,6 +40,48 @@ def getAutomationData2(request):
 
 
 @api_view(['GET'])
+@permission_classes([IsAuthenticated])
+def getAutomationData3(request):
+	# data = {
+	# 	"link": "https://9gag.com/connect/google?next=%2F",
+	# 	"csv_file": "emails.csv",
+	# 	"split": ";",
+	# 	"chrome_driver": "chromedriver",
+	# 	"nav_prv": "--incognito",
+	# 	"login_input": '//*[@id="identifierId"]',
+	# 	"next_btn": '//*[@id="identifierNext"]/div/button',
+	# 	"pass_input": '//*[@id="password"]/div[1]/div/div[1]/input',
+	# 	"next_btn2":  '//*[@id="passwordNext"]/div/button',
+	# 	"search_btn": "//*[@id='top-nav']/div/div/div[1]/a",
+	# 	"search_input": "//*[@id='top-nav']/div/div/div[1]/div/div/form/div/input",
+	# 	"tags_buttons": "ui-search-item",
+	# 	"feresh_tag": '//*[@id="page"]/div[2]/div[1]/div/ul/li[2]/a',
+	# 	"up_buttons": "up",
+	# 	"elemnts_number": 0
+	# }
+	data = {
+		"0": "https://9gag.com/connect/google?next=%2F",
+		"1": "emails.csv",
+		"2": ";",
+		"3": "chromedriver",
+		"4": "--incognito",
+		"5": '//*[@id="identifierId"]',
+		"6": '//*[@id="identifierNext"]/div/button',
+		"7": '//*[@id="password"]/div[1]/div/div[1]/input',
+		"8":  '//*[@id="passwordNext"]/div/button',
+		"9": "//*[@id='top-nav']/div/div/div[1]/a",
+		"10": "//*[@id='top-nav']/div/div/div[1]/div/div/form/div/input",
+		"11": "ui-search-item",
+		"12": '//*[@id="page"]/div[2]/div[1]/div/ul/li[2]/a',
+		"13": "up",
+		"14": 0
+	}
+
+
+	return Response(data, status=status.HTTP_200_OK)
+
+
+@api_view(['GET'])
 #@permission_classes([IsAuthenticated])
 def getAllSeries(request):
 	series = models.Serie.objects.filter(is_active=True)
