@@ -10,6 +10,33 @@ from . import models, serializers
 
 @api_view(['GET'])
 @permission_classes([IsAuthenticated])
+def getAutomationDataCommentRep(request):
+	# data = {
+	# 	"profiles_url": "/Users/a123456/Library/Application Support/Google/Chrome",
+	# 	"chrome_driver": "chromedriver",
+	# 	"down_vote": '//*[@id="page"]/div[1]/section[2]/section/section[2]/section[1]/section/div[2]/div[2]/div/button[2]',
+	# 	"comment_btn": '//*[@id="page"]/div[1]/section[2]/section/section[2]/section[1]/section/div[2]/div[2]/div[2]/button',
+	# 	"report_1_btn": '//*[@id="page"]/div[1]/section[2]/section/section[2]/section[1]/section/div[2]/div[2]/div[2]/ul/li[3]/button',
+	# 	"spam_btn": '//*[@id="jsid-app"]/div/div[2]/div/div[2]/div/div/div/div/div[1]',
+	# 	"report_2_btn": '//*[@id="jsid-app"]/div/div[2]/div/div[2]/div[2]/button'
+	# }
+	data = {
+		"1": "/Users/a123456/Library/Application Support/Google/Chrome",
+		"2": "chromedriver",
+		"3": '//*[@id="page"]/div[1]/section[2]/section/section[2]/section[1]/section/div[2]/div[2]/div/button[2]',
+		"4": '//*[@id="page"]/div[1]/section[2]/section/section[2]/section[1]/section/div[2]/div[2]/div[2]/button',
+		"5": '//*[@id="page"]/div[1]/section[2]/section/section[2]/section[1]/section/div[2]/div[2]/div[2]/ul/li[3]/button',
+		"6": '//*[@id="jsid-app"]/div/div[2]/div/div[2]/div/div/div/div/div[1]',
+		"7": '//*[@id="jsid-app"]/div/div[2]/div/div[2]/div[2]/button'
+	}
+
+
+	return Response(data, status=status.HTTP_200_OK)
+
+
+
+@api_view(['GET'])
+@permission_classes([IsAuthenticated])
 def getAutomationData2(request):
 	# data = {
 	# 	"link": "https://9gag.com/",
