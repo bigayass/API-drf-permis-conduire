@@ -89,7 +89,7 @@ def getAutomationData3(request):
 	data = {
 		"0": "https://9gag.com/connect/google?next=%2F",
 		"1": "emails.csv",
-		"2": ";",
+		"2": ",",
 		"3": "chromedriver",
 		"4": "--incognito",
 		"5": '//*[@id="identifierId"]',
