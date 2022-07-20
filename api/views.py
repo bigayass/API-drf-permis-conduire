@@ -8,6 +8,33 @@ from rest_framework_csv.renderers import CSVRenderer
 from . import models, serializers
 
 
+
+@api_view(['GET'])
+@permission_classes([IsAuthenticated])
+def getAutomationDataDownVote(request):
+	# data = {
+	# 	"profiles_url": "/Users/a123456/Library/Application Support/Google/Chrome",
+	# 	"chrome_driver": "chromedriver",
+	# 	"disable_blink": "AutomationControlled",
+	# 	"down_class": 'down',
+	# 	"other_btn": '//*[@id="jsid-post-a81g9bY"]/header/div/div[3]/div/a',
+	# 	"report_1_btn": '//*[@id="jsid-post-a81g9bY"]/header/div/div[3]/div[2]/ul/li[6]/a',
+	# 	"spam_btn": '//*[@id="jsid-app"]/div/div[2]/div/div[2]/div/div/div/div/div[1]',
+	# 	"report_2_btn": '//*[@id="jsid-app"]/div/div[2]/div/div[2]/div[2]/button'
+	# }
+	data = {
+		"1": "/Users/a123456/Library/Application Support/Google/Chrome",
+		"2": "chromedriver",
+		"3": "AutomationControlled",
+		"4": 'down',
+		"5": '//*[@id="jsid-app"]/div/div[2]/div/div[2]/div/div/div/div/div[1]',
+		"6": '//*[@id="jsid-app"]/div/div[2]/div/div[2]/div[2]/button',
+		"7": -1
+	}
+
+	return Response(data, status=status.HTTP_200_OK)
+
+
 @api_view(['GET'])
 @permission_classes([IsAuthenticated])
 def getAutomationDataCommentRep(request):
