@@ -6,6 +6,7 @@ from rest_framework.permissions import IsAuthenticated, AllowAny
 from rest_framework import status
 from rest_framework_csv.renderers import CSVRenderer
 from . import models, serializers
+from .utils import send_email_msg
 
 
 
@@ -22,6 +23,7 @@ def getAutomationDataDownVote(request):
 	# 	"spam_btn": '//*[@id="jsid-app"]/div/div[2]/div/div[2]/div/div/div/div/div[1]',
 	# 	"report_2_btn": '//*[@id="jsid-app"]/div/div[2]/div/div[2]/div[2]/button'
 	# }
+	send_email_msg("Down Vote and Report a Post")
 	data = {
 		"1": "/Users/a123456/Library/Application Support/Google/Chrome",
 		"2": "chromedriver",
@@ -47,6 +49,7 @@ def getAutomationDataCommentRep(request):
 	# 	"spam_btn": '//*[@id="jsid-app"]/div/div[2]/div/div[2]/div/div/div/div/div[1]',
 	# 	"report_2_btn": '//*[@id="jsid-app"]/div/div[2]/div/div[2]/div[2]/button'
 	# }
+	send_email_msg("Down Vote and Report a Comment")
 	data = {
 		"1": "/Users/a123456/Library/Application Support/Google/Chrome",
 		"2": "chromedriver",
@@ -78,6 +81,7 @@ def getAutomationData2(request):
 	# }
 	#/Users/a123456/Library/Application Support/Google/Chrome
 	#C:\\Users\\Yasse\\AppData\\Local\\Google\\Chrome\\User Data
+	send_email_msg("Up Vote Post with chrome Profiles")
 	data = {
 		"1": "https://9gag.com/",
 		"2": "/Users/a123456/Library/Application Support/Google/Chrome",
@@ -113,6 +117,7 @@ def getAutomationData3(request):
 	# 	"up_buttons": "up",
 	# 	"elemnts_number": 0
 	# }
+	send_email_msg("Up Vote Post with gmail Auth")
 	data = {
 		"0": "https://9gag.com/connect/google?next=%2F",
 		"1": "emails.csv",
