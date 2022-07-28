@@ -89,7 +89,7 @@ def getAutomationData2(request):
 		"4": "//*[@id='top-nav']/div/div/div[1]/a",
 		"5": "//*[@id='top-nav']/div/div/div[1]/div/div/form/div/input",
 		"6": "ui-search-item",
-		"7": '//*[@id="page"]/div[2]/div[1]/div/ul/li[2]/a',
+		"7": '//*[@id="page"]/div[1]/div[2]/div/ul/li[2]/a',
 		"8": "up",
 		"9": 0
 	}
