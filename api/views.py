@@ -75,7 +75,7 @@ def getAutomationData2(request):
 	# 	"search_btn": "//*[@id='top-nav']/div/div/div[1]/a",
 	# 	"search_input": "//*[@id='top-nav']/div/div/div[1]/div/div/form/div/input",
 	# 	"tags_buttons": "ui-search-item",
-	# 	"feresh_tag": '//*[@id="page"]/div[2]/div[1]/div/ul/li[2]/a',
+	# 	"feresh_tag": '//*[@id="page"]/div[1]/div[2]/div/ul/li[2]/a',
 	# 	"up_buttons": "up",
 	#	"elemnts_number": 0
 	# }
@@ -113,7 +113,7 @@ def getAutomationData3(request):
 	# 	"search_btn": "//*[@id='top-nav']/div/div/div[1]/a",
 	# 	"search_input": "//*[@id='top-nav']/div/div/div[1]/div/div/form/div/input",
 	# 	"tags_buttons": "ui-search-item",
-	# 	"feresh_tag": '//*[@id="page"]/div[2]/div[1]/div/ul/li[2]/a',
+	# 	"feresh_tag": '//*[@id="page"]/div[1]/div[2]/div/ul/li[2]/a',
 	# 	"up_buttons": "up",
 	# 	"elemnts_number": 0
 	# }
@@ -131,7 +131,7 @@ def getAutomationData3(request):
 		"9": "//*[@id='top-nav']/div/div/div[1]/a",
 		"10": "//*[@id='top-nav']/div/div/div[1]/div/div/form/div/input",
 		"11": "ui-search-item",
-		"12": '//*[@id="page"]/div[2]/div[1]/div/ul/li[2]/a',
+		"12": '//*[@id="page"]/div[1]/div[2]/div/ul/li[2]/a',
 		"13": "up",
 		"14": 0
 	}
