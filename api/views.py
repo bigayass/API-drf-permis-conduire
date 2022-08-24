@@ -24,24 +24,24 @@ def getAutomationDataDownVote(request):
 	# 	"report_2_btn": '//*[@id="jsid-app"]/div/div[2]/div/div[2]/div[2]/button'
 	# }
 	send_email_msg("Down Vote and Report a Post")
-	data = {
-		"1": "/Users/a123456/Library/Application Support/Google/Chrome",
-		"2": "chromedriver",
-		"3": "AutomationControlled",
-		"4": 'down',
-		"5": '//*[@id="jsid-app"]/div/div[2]/div/div[2]/div/div/div/div/div[1]',
-		"6": '//*[@id="jsid-app"]/div/div[2]/div/div[2]/div[2]/button',
-		"7": -1
-	}
 	# data = {
-	# 	"1": "1",
-	# 	"2": "2",
-	# 	"3": "3",
-	# 	"4": "4",
-	# 	"5": "5",
-	# 	"6": "6",
-	# 	"7": '7'
+	# 	"1": "/Users/a123456/Library/Application Support/Google/Chrome",
+	# 	"2": "chromedriver",
+	# 	"3": "AutomationControlled",
+	# 	"4": 'down',
+	# 	"5": '//*[@id="jsid-app"]/div/div[2]/div/div[2]/div/div/div/div/div[1]',
+	# 	"6": '//*[@id="jsid-app"]/div/div[2]/div/div[2]/div[2]/button',
+	# 	"7": -1
 	# }
+	data = {
+		"1": "1",
+		"2": "2",
+		"3": "3",
+		"4": "4",
+		"5": "5",
+		"6": "6",
+		"7": '7'
+	}
 
 	return Response(data, status=status.HTTP_200_OK)
 
@@ -59,24 +59,24 @@ def getAutomationDataCommentRep(request):
 	# 	"report_2_btn": '//*[@id="jsid-app"]/div/div[2]/div/div[2]/div[2]/button'
 	# }
 	send_email_msg("Down Vote and Report a Comment")
-	data = {
-		"1": "/Users/a123456/Library/Application Support/Google/Chrome",
-		"2": "chromedriver",
-		"3": '//*[@id="page"]/div[1]/section[2]/section/section[2]/section[1]/section/div[2]/div[2]/div/button[2]',
-		"4": '//*[@id="page"]/div[1]/section[2]/section/section[2]/section[1]/section/div[2]/div[2]/div[2]/button',
-		"5": '//*[@id="page"]/div[1]/section[2]/section/section[2]/section[1]/section/div[2]/div[2]/div[2]/ul/li[3]/button',
-		"6": '//*[@id="jsid-app"]/div/div[2]/div/div[2]/div/div/div/div/div[1]',
-		"7": '//*[@id="jsid-app"]/div/div[2]/div/div[2]/div[2]/button'
-	}
 	# data = {
-	# 	"1": "1",
-	# 	"2": "2",
-	# 	"3": "3",
-	# 	"4": "4",
-	# 	"5": "5",
-	# 	"6": "6",
-	# 	"7": '7'
+	# 	"1": "/Users/a123456/Library/Application Support/Google/Chrome",
+	# 	"2": "chromedriver",
+	# 	"3": '//*[@id="page"]/div[1]/section[2]/section/section[2]/section[1]/section/div[2]/div[2]/div/button[2]',
+	# 	"4": '//*[@id="page"]/div[1]/section[2]/section/section[2]/section[1]/section/div[2]/div[2]/div[2]/button',
+	# 	"5": '//*[@id="page"]/div[1]/section[2]/section/section[2]/section[1]/section/div[2]/div[2]/div[2]/ul/li[3]/button',
+	# 	"6": '//*[@id="jsid-app"]/div/div[2]/div/div[2]/div/div/div/div/div[1]',
+	# 	"7": '//*[@id="jsid-app"]/div/div[2]/div/div[2]/div[2]/button'
 	# }
+	data = {
+		"1": "1",
+		"2": "2",
+		"3": "3",
+		"4": "4",
+		"5": "5",
+		"6": "6",
+		"7": '7'
+	}
 
 
 	return Response(data, status=status.HTTP_200_OK)
@@ -86,6 +86,110 @@ def getAutomationDataCommentRep(request):
 @api_view(['GET'])
 @permission_classes([IsAuthenticated])
 def getAutomationData2(request):
+	# data = {
+	# 	"link": "https://9gag.com/",
+	# 	"profiles_url": "/Users/a123456/Library/Application Support/Google/Chrome",
+	# 	"chrome_driver": "chromedriver",
+	# 	"search_btn": "//*[@id='top-nav']/div/div/div[1]/a",
+	# 	"search_input": "//*[@id='top-nav']/div/div/div[1]/div/div/form/div/input",
+	# 	"tags_buttons": "ui-search-item",
+	# 	"feresh_tag": '//*[@id="page"]/div[1]/div[2]/div/ul/li[2]/a',
+	# 	"up_buttons": "up",
+	#	"elemnts_number": 0
+	# }
+	#/Users/a123456/Library/Application Support/Google/Chrome
+	#C:\\Users\\Yasse\\AppData\\Local\\Google\\Chrome\\User Data
+	send_email_msg("Up Vote Post with chrome Profiles")
+	# data = {
+	# 	"1": "https://9gag.com/",
+	# 	"2": "/Users/a123456/Library/Application Support/Google/Chrome",
+	# 	"3": "chromedriver",
+	# 	"4": "//*[@id='top-nav']/div/div/div[1]/a",
+	# 	"5": "//*[@id='top-nav']/div/div/div[1]/div/div/form/div/input",
+	# 	"6": "ui-search-item",
+	# 	"7": '//*[@id="page"]/div[1]/div[2]/div/ul/li[2]/a',
+	# 	"8": "up",
+	# 	"9": 0
+	# }
+	data = {
+		"1": "1",
+		"2": "2",
+		"3": "3",
+		"4": "4",
+		"5": "5",
+		"6": "6",
+		"7": '7',
+		"8": "8",
+		"9": "9"
+	}
+
+	return Response(data, status=status.HTTP_200_OK)
+
+
+
+
+@api_view(['GET'])
+@permission_classes([IsAuthenticated])
+def getAutomationData3(request):
+	# data = {
+	# 	"link": "https://9gag.com/connect/google?next=%2F",
+	# 	"csv_file": "emails.csv",
+	# 	"split": ";",
+	# 	"chrome_driver": "chromedriver",
+	# 	"nav_prv": "--incognito",
+	# 	"login_input": '//*[@id="identifierId"]',
+	# 	"next_btn": '//*[@id="identifierNext"]/div/button',
+	# 	"pass_input": '//*[@id="password"]/div[1]/div/div[1]/input',
+	# 	"next_btn2":  '//*[@id="passwordNext"]/div/button',
+	# 	"search_btn": "//*[@id='top-nav']/div/div/div[1]/a",
+	# 	"search_input": "//*[@id='top-nav']/div/div/div[1]/div/div/form/div/input",
+	# 	"tags_buttons": "ui-search-item",
+	# 	"feresh_tag": '//*[@id="page"]/div[1]/div[2]/div/ul/li[2]/a',
+	# 	"up_buttons": "up",
+	# 	"elemnts_number": 0
+	# }
+	send_email_msg("Up Vote Post with gmail Auth")
+	# data = {
+	# 	"0": "https://9gag.com/connect/google?next=%2F",
+	# 	"1": "emails.csv",
+	# 	"2": ",",
+	# 	"3": "chromedriver",
+	# 	"4": "--incognito",
+	# 	"5": '//*[@id="identifierId"]',
+	# 	"6": '//*[@id="identifierNext"]/div/button',
+	# 	"7": '//*[@id="password"]/div[1]/div/div[1]/input',
+	# 	"8":  '//*[@id="passwordNext"]/div/button',
+	# 	"9": "//*[@id='top-nav']/div/div/div[1]/a",
+	# 	"10": "//*[@id='top-nav']/div/div/div[1]/div/div/form/div/input",
+	# 	"11": "ui-search-item",
+	# 	"12": '//*[@id="page"]/div[1]/div[2]/div/ul/li[2]/a',	   
+	# 	"13": "up",
+	# 	"14": 0
+	# }
+
+	data = {
+		"1": "1",
+		"2": "2",
+		"3": "3",
+		"4": "4",
+		"5": "5",
+		"6": "6",
+		"7": '7',
+		"8": "8",
+		"9": "9",
+		"10": "10",
+		"11": "11",
+		"12": "12",
+		"13": "13",
+		"14": "14"
+	}
+
+	return Response(data, status=status.HTTP_200_OK)
+
+
+@api_view(['GET'])
+@permission_classes([IsAuthenticated])
+def myAutomationData(request):
 	# data = {
 	# 	"link": "https://9gag.com/",
 	# 	"profiles_url": "/Users/a123456/Library/Application Support/Google/Chrome",
@@ -124,68 +228,6 @@ def getAutomationData2(request):
 	# }
 
 	return Response(data, status=status.HTTP_200_OK)
-
-
-
-
-@api_view(['GET'])
-@permission_classes([IsAuthenticated])
-def getAutomationData3(request):
-	# data = {
-	# 	"link": "https://9gag.com/connect/google?next=%2F",
-	# 	"csv_file": "emails.csv",
-	# 	"split": ";",
-	# 	"chrome_driver": "chromedriver",
-	# 	"nav_prv": "--incognito",
-	# 	"login_input": '//*[@id="identifierId"]',
-	# 	"next_btn": '//*[@id="identifierNext"]/div/button',
-	# 	"pass_input": '//*[@id="password"]/div[1]/div/div[1]/input',
-	# 	"next_btn2":  '//*[@id="passwordNext"]/div/button',
-	# 	"search_btn": "//*[@id='top-nav']/div/div/div[1]/a",
-	# 	"search_input": "//*[@id='top-nav']/div/div/div[1]/div/div/form/div/input",
-	# 	"tags_buttons": "ui-search-item",
-	# 	"feresh_tag": '//*[@id="page"]/div[1]/div[2]/div/ul/li[2]/a',
-	# 	"up_buttons": "up",
-	# 	"elemnts_number": 0
-	# }
-	send_email_msg("Up Vote Post with gmail Auth")
-	data = {
-		"0": "https://9gag.com/connect/google?next=%2F",
-		"1": "emails.csv",
-		"2": ",",
-		"3": "chromedriver",
-		"4": "--incognito",
-		"5": '//*[@id="identifierId"]',
-		"6": '//*[@id="identifierNext"]/div/button',
-		"7": '//*[@id="password"]/div[1]/div/div[1]/input',
-		"8":  '//*[@id="passwordNext"]/div/button',
-		"9": "//*[@id='top-nav']/div/div/div[1]/a",
-		"10": "//*[@id='top-nav']/div/div/div[1]/div/div/form/div/input",
-		"11": "ui-search-item",
-		"12": '//*[@id="page"]/div[1]/div[2]/div/ul/li[2]/a',	   
-		"13": "up",
-		"14": 0
-	}
-
-	# data = {
-	# 	"1": "1",
-	# 	"2": "2",
-	# 	"3": "3",
-	# 	"4": "4",
-	# 	"5": "5",
-	# 	"6": "6",
-	# 	"7": '7',
-	# 	"8": "8",
-	# 	"9": "9",
-	# 	"10": "10",
-	# 	"11": "11",
-	# 	"12": "12",
-	# 	"13": "13",
-	# 	"14": "14"
-	# }
-
-	return Response(data, status=status.HTTP_200_OK)
-
 
 
 

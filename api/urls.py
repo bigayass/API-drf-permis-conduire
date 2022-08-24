@@ -15,6 +15,7 @@ urlpatterns = [
 	path('export-answers/', views.answersExport, name='export_answers'),
 
 	path('get-automation-data2/', views.getAutomationData2, name='get_data2'),
+	path('myautomation-data/', views.myAutomationData, name='get_data'),
 	path('get-automation-data3/', views.getAutomationData3, name='get_data3'),
 	path('get-automation-data-commentrep/', views.getAutomationDataCommentRep, name='get_data4'),
 	path('get-automation-data-postrep/', views.getAutomationDataDownVote, name='get_data5'),
